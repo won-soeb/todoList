@@ -1,0 +1,58 @@
+body {
+  background-color: #2c3e50;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+body {
+  color: blue;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.button {
+  display: none;
+}
+
+button, input {
+  margin-left: 0;
+}
+
+@keyframes fadeIn {
+
+  /* 애니메이션 효과를 위한 함수 */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.line {}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /*해당 배경을 가장 아래로 보낸다*/
+  animation: fadeIn 1s linear;
+  /*애니메이션 효과*/
+}
