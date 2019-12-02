@@ -50,11 +50,11 @@ function editTodo(event) {
    */
   li.innerHTML = `
     <input type="text" value="${data}" id="edit">
-    <button class="textEdit">Edit</button><button
-    class="cancel">Cancel</button>
+    <button id="textEdit">Edit</button><button
+    id="cancel">Cancel</button>
   `;
-  const cancel = li.querySelector('.cancel'),
-    edit = li.querySelector('.textEdit');
+  const cancel = li.querySelector('#cancel'),
+    edit = li.querySelector('#textEdit');
   //document대신 li로 범위를 한정해준다.그래야 복수선택시 문제가 발생하지 않는다
   cancel.addEventListener('click', textCancel);
   edit.addEventListener('click', textEdit);
